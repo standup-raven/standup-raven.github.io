@@ -4,7 +4,7 @@
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
 /* =================================== */
-/*  Basic Style 
+/*  Basic Style
 /* =================================== */
 ::-moz-selection {
   /* Code for Firefox */
@@ -1655,8 +1655,33 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 4px solid #46dbf9; }
 
 #header #logo img {
-  padding: 0;
-  margin: 0; }
+  height: 36px;}
+
+#header span {
+  font-family: acumin-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;}
+
+#logo span {
+  color: #333;
+  margin: 0 10px;}
+
+.demo video {
+  width: 73%;
+  margin: 2% auto 0;
+}
+
+.demo {
+    position: absolute;
+    right: 8%;}
+
+.harshil {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;}
 
 @media (max-width: 768px) {
   #header #logo h1 {
@@ -1870,7 +1895,7 @@ body.mobile-nav-active #mobile-nav-toggle {
       .home-banner-area .banner-img {
         text-align: left; }
         .home-banner-area .banner-img img {
-          width: 60%; } }
+          width: 100%; } }
     @media (max-width: 991px) {
       .home-banner-area .banner-img {
         text-align: center; } }
@@ -3269,5 +3294,4 @@ body.mobile-nav-active #mobile-nav-toggle {
       font-size: 12px; }
       .footer-area .footer-bottom .buttons p span {
         font-size: 18px; }
-
 /*# sourceMappingURL=main.css.map */
