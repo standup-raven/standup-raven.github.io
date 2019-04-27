@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     "use strict";
 
@@ -14,10 +13,12 @@ $(document).ready(function () {
 
     if (document.getElementById("default-select")) {
         $('select').niceSelect();
-    };
+    }
+    ;
     if (document.getElementById("service-select")) {
         $('select').niceSelect();
-    };
+    }
+    ;
 
     $('.img-gal').magnificPopup({
         type: 'image',
@@ -43,7 +44,6 @@ $(document).ready(function () {
     $('.single-price').tilt({
         maxTilt: 9,
     });
-
 
 
     // Initiate superfish on nav menu
@@ -147,9 +147,7 @@ $(document).ready(function () {
 
             }, 0);
 
-        }
-
-        else {
+        } else {
 
             $('html, body').show();
 
@@ -351,8 +349,6 @@ $(document).ready(function () {
     });
 
 
-
-
     //  Start Google map
 
     // When the window has finished loading create our google map below
@@ -373,7 +369,57 @@ $(document).ready(function () {
 
                 // How you would like to style the map.
                 // This is where you would paste any style found on Snazzy Maps.
-                styles: [{ "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }, { "lightness": 17 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 20 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#ffffff" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#ffffff" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }, { "lightness": 16 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#f5f5f5" }, { "lightness": 21 }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#dedede" }, { "lightness": 21 }] }, { "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#ffffff" }, { "lightness": 16 }] }, { "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#333333" }, { "lightness": 40 }] }, { "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#f2f2f2" }, { "lightness": 19 }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#fefefe" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#fefefe" }, { "lightness": 17 }, { "weight": 1.2 }] }]
+                styles: [{
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+                }, {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+                }, {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]
+                }, {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#dedede"}, {"lightness": 21}]
+                }, {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+                }, {
+                    "elementType": "labels.text.fill",
+                    "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+                }, {"elementType": "labels.icon", "stylers": [{"visibility": "off"}]}, {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+                }]
             };
 
             // Get the HTML DOM element that will contain your map
@@ -401,8 +447,6 @@ $(document).ready(function () {
     animateDemoCards();
 
 
-
-
 });
 
 const minCardPosition = 0;
@@ -410,11 +454,11 @@ const maxCardPosition = 3;
 let currentCardPosition = minCardPosition;
 let pause = false;
 
-$('.card').mouseenter(function() {
+$('.card').mouseenter(function () {
     pause = true;
     console.log("enter");
 });
-$('.card').mouseleave(function() {
+$('.card').mouseleave(function () {
     pause = false;
     console.log("exit");
 });
@@ -428,7 +472,7 @@ function animateDemoCards() {
     }
 
     for (let i = minCardPosition; i <= maxCardPosition; ++i) {
-        $('.card.card-'+currentCardPosition).addClass('hover');
+        $('.card.card-' + currentCardPosition).addClass('hover');
     }
 
     ++currentCardPosition;
