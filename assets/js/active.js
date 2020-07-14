@@ -151,6 +151,7 @@ var jQuery, document, window, location, swal;
             'font-weight: bold',
             'display: inline-block'
         ].join(';');
+        document.querySelector('.eco--home--image-1').classList.remove('hidden');
         console.log('%c SITE LOADED 100%, - Created by ' + dh.dev, dh.consoleStyle);
     };
 
