@@ -76,7 +76,7 @@ var jQuery, document, window, location, swal;
                 fixedContentPos: false
             });
         }
-        
+
         dh.mainMenu = $('.eco--main--menu');
         if($.fn.slicknav && dh.mainMenu.length){
             dh.mainMenu.slicknav({
@@ -152,6 +152,7 @@ var jQuery, document, window, location, swal;
             'display: inline-block'
         ].join(';');
         document.querySelector('.eco--home--image-1').classList.remove('hidden');
+        inject();
         console.log('%c SITE LOADED 100%, - Created by ' + dh.dev, dh.consoleStyle);
     };
 
