@@ -238,16 +238,16 @@
                         <nav class="eco--main--menu">
                             <ul>
                                 <li>
-                                    <a class="eco--btn cta cta-secondary cta-support" href="#">
-                                        <div class="row">
-                                            <div class="col-lg-4 content-left">
-                                                <div class=logo>
-                                                    <img class="inject-me" src="assets/img/heart.svg">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8 content-right">Sponsor</div>
-                                        </div>
-                                    </a>
+<!--                                    <a class="eco&#45;&#45;btn cta cta-secondary cta-support" href="#">-->
+<!--                                        <div class="row">-->
+<!--                                            <div class="col-lg-4 content-left">-->
+<!--                                                <div class=logo>-->
+<!--                                                    <img class="inject-me" src="assets/img/heart.svg">-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="col-lg-8 content-right">Sponsor</div>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
                                 </li>
                             </ul>
                         </nav>
@@ -299,21 +299,26 @@
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-2"></div>
-                <div class="col-lg-4 col-md-7 eco--home--image-1 hidden">
-                    <div class="demo-img first-reminder slide-in-blurred-right">
-                        <img alt="" src="assets/img/first-reminder.png">
-                    </div>
-                    <div class="demo-img second-reminder slide-in-blurred-right-400ms-delay">
-                        <img alt="" src="assets/img/second-reminder.png">
-                    </div>
-                    <div class="demo-img report slide-in-blurred-right-800ms-delay" style="
-  overflow: hidden;
-">
-                        <img alt="" src="assets/img/report-long.png" style="/* width: 80%; */">
+                <div class="col-lg-4 col-md-7 eco--home--image-1 hidden demo-img-wrapper">
+<!--                    <div class="demo-img first-reminder slide-in-blurred-right">-->
+<!--                        <img class="inject-me" alt="" src="assets/img/first_reminder.svg">-->
+<!--                    </div>-->
+<!--                    <div class="demo-img second-reminder slide-in-blurred-right-400ms-delay">-->
+<!--                        <img class="inject-me" alt="" src="assets/img/second_reminder.svg">-->
+<!--                    </div>-->
+<!--                    <div class="demo-img report slide-in-blurred-right-800ms-delay" style="-->
+<!--  overflow: hidden;-->
+<!--">-->
+<!--                        <img alt="" class="inject-me" src="assets/img/report.svg" style="/* width: 80%; */">-->
+<!--                    </div>-->
+                    <div class="app-demo">
+                        <img class="inject-me" src="assets/img/app.svg">
                     </div>
                 </div>
             </div>
         </div>
+<!--        <button class="support" type="submit">Support<i-->
+<!--                class="fa fa-spinner fa-pulse hidden submitSpinner"></i></button>-->
     </div> <!-- end .eco-home-area-1 -->
     <div class="eco--newsletter--area--1 c1-bg eco--pd--100">
         <div class="container">
@@ -447,68 +452,41 @@
             </div>
         </div>
     </div> <!-- end .eco-review-area-1 -->
-    <div class="hidden eco--feature--area--1 eco--pd--100">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="eco--feature--1">
-                        <div class="eco--single--feature--1">
-                            <span class="eco--feature--left">01</span>
-                            <div class="eco--feature--right">
-                                <h3>Open Collective</h3>
-                                <p><a href="https://opencollective.com/webpack/donate" target="_blank">
-                                    <img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" width=300 />
-                                </a></p>
-                            </div>
-                        </div> <!-- .eco-single-feature-1 -->
-                        <div class="eco--single--feature--1">
-                            <span class="eco--feature--left">02</span>
-                            <div class="eco--feature--right">
-                                <h3>PayPal</h3>
-                                <p><div id="paypal-button-container"></div>
-                                <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-                                <script>
-                                    paypal.Buttons({
-                                        style: {
-                                            shape: 'rect',
-                                            color: 'blue',
-                                            layout: 'vertical',
-                                            label: 'checkout',
+<!--    <div class="donation eco&#45;&#45;feature&#45;&#45;area&#45;&#45;1 eco&#45;&#45;pd&#45;&#45;100">-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-6">-->
+<!--                    <div class="eco&#45;&#45;feature&#45;&#45;1">-->
+<!--                        <div class="eco&#45;&#45;single&#45;&#45;feature&#45;&#45;1">-->
+<!--                            <span class="eco&#45;&#45;feature&#45;&#45;left">01</span>-->
+<!--                            <div class="eco&#45;&#45;feature&#45;&#45;right">-->
+<!--                                <h3>Open Collective</h3>-->
+<!--                                <p><a href="https://opencollective.com/webpack/donate" target="_blank">-->
+<!--                                    <img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" width=300 />-->
+<!--                                </a></p>-->
+<!--                            </div>-->
+<!--                        </div> &lt;!&ndash; .eco-single-feature-1 &ndash;&gt;-->
+<!--                        <div class="eco&#45;&#45;single&#45;&#45;feature&#45;&#45;1">-->
+<!--                            <span class="eco&#45;&#45;feature&#45;&#45;left">02</span>-->
+<!--                            <div class="eco&#45;&#45;feature&#45;&#45;right">-->
 
-                                        },
-                                        createOrder: function(data, actions) {
-                                            return actions.order.create({
-                                                purchase_units: [{
-                                                    amount: {
-                                                        value: '15'
-                                                    }
-                                                }]
-                                            });
-                                        },
-                                        onApprove: function(data, actions) {
-                                            return actions.order.capture().then(function(details) {
-                                                alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                            });
-                                        }
-                                    }).render('#paypal-button-container');
-                                </script></p>
-                            </div>
-                        </div> <!-- .eco-single-feature-1 -->
-                        <div class="eco--single--feature--1">
-                            <span class="eco--feature--left">03</span>
-                            <div class="eco--feature--right">
-                                <h3>Ko-Fi</h3>
-                                <p><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'W7W11SK6R');kofiwidget2.draw();</script> </p>
-                            </div>
-                        </div> <!-- .eco-single-feature-1 -->
-                    </div> <!-- .eco-feature-1 -->
-                </div>
-            </div>
-            <div class="eco--feature--image--1">
-                <img alt="" src="assets/img/item-04.jpg">
-            </div>
-        </div>
-    </div>
+<!--                            </div>-->
+<!--                        </div> &lt;!&ndash; .eco-single-feature-1 &ndash;&gt;-->
+<!--                        <div class="eco&#45;&#45;single&#45;&#45;feature&#45;&#45;1">-->
+<!--                            <span class="eco&#45;&#45;feature&#45;&#45;left">03</span>-->
+<!--&lt;!&ndash;                            <div class="eco&#45;&#45;feature&#45;&#45;right">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <h3>Ko-Fi</h3>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p><script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'W7W11SK6R');kofiwidget2.draw();</script> </p>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--                        </div> &lt;!&ndash; .eco-single-feature-1 &ndash;&gt;-->
+<!--                    </div> &lt;!&ndash; .eco-feature-1 &ndash;&gt;-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="eco&#45;&#45;feature&#45;&#45;image&#45;&#45;1">-->
+<!--                <img alt="" src="assets/img/item-04.jpg">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="hidden eco--promo--3 eco--pd--140 eco--pd--140 c7-bg eco--bg--ptrn--2">
         <div class="container">
             <div class="row">
@@ -976,6 +954,7 @@
 <script src="assets/js/vendor/slicknav.min.js"></script>
 <script src="assets/js/active.js"></script>
 <script src="assets/js/svg-injector.min.js"></script>
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="harshilsharma63" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FF813F" data-position="right" data-x_margin="18" data-y_margin="18"></script>
 <script>
     function inject() {
         console.log("AAA");

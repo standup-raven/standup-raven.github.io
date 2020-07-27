@@ -2543,12 +2543,14 @@ body,
 .demo-img {
     width: 90%;
     max-width: 670px;
-    margin: 30px 0;
+    margin: 16px 0;
     float: right;
     /* box-shadow: 20px 20px 60px #d9d9d9,
              -20px -20px 60px #ffffff; */
     /* padding: 30px; */
     /* border-radius: 20px; */
+    /* display: none; */
+    max-width: 400px;
 }
 
 .hero .row {
@@ -2826,6 +2828,7 @@ body,
 
 .cta.cta-secondary {
     border-color: #7898c1 !important;
+    border: 1px solid;
 }
 
 .widget.footer_widget .eco--inner ul li {
@@ -2838,4 +2841,57 @@ body,
 
 .cta-support:hover .logo svg > * {
     fill: lightpink;
+}
+
+.demo-img svg {
+    width: 100%;
+    height: auto;
+}
+
+.demo-img-wrapper {
+    /* overflow: hidden; */
+    /* max-width: 33%; */
+}
+
+.app-demo {
+    height: 80vh;
+}
+
+.app-demo > svg {
+    height: 100%;
+    width: auto;
+    border-radius: 13px;
+}
+
+.support {
+    height: 57px;
+    border-radius: 40px;
+    background-color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 0 30px;
+    width: 280px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    border: 2px solid #485ff8;
+}
+
+#bmc-wbtn {
+    height: 56px !important;
+    width: 56px !important;
+}
+
+#bmc-wbtn img {
+    width: 20px !important;
+}
+
+#bmc-wbtn + div {
+    padding: 12px !important;
+    font-size: 12px !important;
 }
