@@ -820,9 +820,9 @@ nav.eco--main--menu ul li:first-child {
 
 nav.eco--main--menu ul li a {
     padding: 20px 15px;
-    font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2507,6 +2507,7 @@ body,
 
 .eco--logo img {
     width: 26px;
+    height: auto;
 }
 
 .eco--header--wraper.eco--header--1 {
@@ -2527,13 +2528,12 @@ body,
 .hero {
     display: flex;
     flex-direction: row;
-    max-width: 80%;
     padding: 0;
     align-items: center;
 }
 
-.eco--header--bottom {
-    width: 80%;
+.hero, .eco--header--bottom {
+    max-width: 90%;
 }
 
 .eco--header--bottom .container-fluid {
@@ -2657,7 +2657,7 @@ body,
     font-weight: 400;
     color: #152235;
     text-transform: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
@@ -2883,8 +2883,8 @@ body,
 }
 
 #bmc-wbtn {
-    height: 56px !important;
-    width: 56px !important;
+    height: 48px !important;
+    width: 48px !important;
 }
 
 #bmc-wbtn img {
@@ -2894,4 +2894,8 @@ body,
 #bmc-wbtn + div {
     padding: 12px !important;
     font-size: 12px !important;
+}
+
+.product-logo {
+    margin-right: 8px;
 }
