@@ -440,11 +440,27 @@ body {
     margin: 0;
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .eco--sec--title h1,
+    .eco--sec--title--white h1 {
+        font-size: 80px;
+        line-height: 72px;
+    }
+}
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .eco--sec--title h1,
     .eco--sec--title--white h1 {
         font-size: 50px;
         line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 0px) {
+    .eco--sec--title h1,
+    .eco--sec--title--white h1 {
+        font-size: 72px;
+        line-height: 64px;
     }
 }
 
@@ -2854,7 +2870,19 @@ body,
 }
 
 .app-demo {
-    height: 80vh;
+    height: 86vh;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+    .app-demo {
+        height: 64vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+    .app-demo {
+        height: 72vh;
+    }
 }
 
 .app-demo > svg {
@@ -2898,4 +2926,10 @@ body,
 
 .product-logo {
     margin-right: 8px;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .col-lg-2 {
+        width: 10%;
+    }
 }
