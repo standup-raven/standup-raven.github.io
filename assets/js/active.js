@@ -78,12 +78,12 @@ var jQuery, document, window, location, swal;
         }
 
         dh.mainMenu = $('.eco--main--menu');
-        if($.fn.slicknav && dh.mainMenu.length){
-            dh.mainMenu.slicknav({
-                appendTo: '.eco--menu--col',
-                allowParentLinks: true
-            });
-        }
+        // if($.fn.slicknav && dh.mainMenu.length){
+        //     dh.mainMenu.slicknav({
+        //         appendTo: '.eco--menu--col',
+        //         allowParentLinks: true
+        //     });
+        // }
     };
 
     dh.mailchimp_form = () => {
@@ -158,52 +158,52 @@ var jQuery, document, window, location, swal;
 
     dh.sliders = () => {
 
-        if ($.fn.slick) {
-
-            // review slider 1
-            dh.reviewSlider1 = $('.eco--review--slider--1');
-            if (dh.reviewSlider1.length) {
-                dh.reviewSlider1.slick({
-                    prevArrow: '<i class="fa fa-long-arrow-up eco--prev"></i>',
-                    nextArrow: '<i class="fa fa-long-arrow-down eco--next"></i>',
-                    vertical: true
-                });
-            }
-
-            // review slider 2
-            dh.reviewSlider2 = $('.eco--review--slider--2');
-            if (dh.reviewSlider2.length) {
-                dh.reviewSlider2.slick({
-                    prevArrow: '<i class="fa fa-long-arrow-left eco--prev"></i>',
-                    nextArrow: '<i class="fa fa-long-arrow-right eco--next"></i>'
-                });
-            }
-
-            // brand slider 1
-            dh.brandSlider1 = $('.eco--brand--slider--1');
-            if (dh.brandSlider1.length) {
-                dh.brandSlider1.slick({
-                    prevArrow: false,
-                    nextArrow: false,
-                    slidesToShow: 5,
-                    autoplay: true,
-                    responsive: [
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 2
-                            }
-                        },
-                        {
-                            breakpoint: 992,
-                            settings: {
-                                slidesToShow: 3
-                            }
-                        }
-                    ]
-                });
-            }
-        }
+        // if ($.fn.slick) {
+        //
+        //     // review slider 1
+        //     dh.reviewSlider1 = $('.eco--review--slider--1');
+        //     if (dh.reviewSlider1.length) {
+        //         dh.reviewSlider1.slick({
+        //             prevArrow: '<i class="fa fa-long-arrow-up eco--prev"></i>',
+        //             nextArrow: '<i class="fa fa-long-arrow-down eco--next"></i>',
+        //             vertical: true
+        //         });
+        //     }
+        //
+        //     // review slider 2
+        //     dh.reviewSlider2 = $('.eco--review--slider--2');
+        //     if (dh.reviewSlider2.length) {
+        //         dh.reviewSlider2.slick({
+        //             prevArrow: '<i class="fa fa-long-arrow-left eco--prev"></i>',
+        //             nextArrow: '<i class="fa fa-long-arrow-right eco--next"></i>'
+        //         });
+        //     }
+        //
+        //     // brand slider 1
+        //     dh.brandSlider1 = $('.eco--brand--slider--1');
+        //     if (dh.brandSlider1.length) {
+        //         dh.brandSlider1.slick({
+        //             prevArrow: false,
+        //             nextArrow: false,
+        //             slidesToShow: 5,
+        //             autoplay: true,
+        //             responsive: [
+        //                 {
+        //                     breakpoint: 768,
+        //                     settings: {
+        //                         slidesToShow: 2
+        //                     }
+        //                 },
+        //                 {
+        //                     breakpoint: 992,
+        //                     settings: {
+        //                         slidesToShow: 3
+        //                     }
+        //                 }
+        //             ]
+        //         });
+        //     }
+        // }
     };
 
     // all functions of document ready
