@@ -1,0 +1,20 @@
+{
+  "name": "standup-raven.github.io",
+  "version": "1.0.0",
+  "description": "Standup Raven Marcom Website",
+  "main": "index.js",
+  "repository": "git@github.com:standup-raven/standup-raven.github.io.git",
+  "author": "Harshil Sharma <harshilsharma63@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "pretty": "yarn prettier --write src",
+    "dev": "yarn http-server -o src/",
+    "optimize": "CHROME_PATH=\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" yarn lighthouse-auto-fix http://localhost:8080 -d docs",
+    "prod": "yarn http-server -o docs/"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "lighthouse-auto-fix": "https://github.com/standup-raven/lighthouse-auto-fix.git",
+    "prettier": "2.0.5"
+  }
+}
