@@ -986,8 +986,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 .fadeIn {
-  -webkit-animation-name: fadeIn;
+  /* -webkit-animation-name: fadeIn; */
   animation-name: fadeIn;
+  animation-duration: 500ms;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -3183,4 +3184,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .zoomOutUp {
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
+}
+
+.delay-2s {
+  animation-delay: 1s;
+}
+
+.delay-3s {
+  animation-delay: 2.5s;
+}
+
+.delay-5s {
+  animation-delay: 4s;
+}
+
+.faaaast {
+  animation-duration: 80ms;
 }
