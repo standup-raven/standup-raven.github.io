@@ -4,7 +4,7 @@
   "description": "Standup Raven Marcom Website",
   "main": "index.js",
   "repository": "git@github.com:standup-raven/standup-raven.github.io.git",
-  "author": "Harshil Sharma <harshilsharma63@gmail.com>",
+  "author": "Josh Technology Grou",
   "license": "MIT",
   "scripts": {
     "pretty": "yarn prettier --write src",
